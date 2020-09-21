@@ -34,7 +34,7 @@ The API being used is Jikan (https://jikan.moe/)
 
 ## Wireframes
 
-!(Wireframe)(https://imgur.com/a/f1J6a7z)
+![Wireframe](https://imgur.com/a/f1J6a7z)
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
@@ -63,7 +63,7 @@ The API being used is Jikan (https://jikan.moe/)
 
 ## Priority Matrix
 
-!(Priority Matrix)(https://imgur.com/a/qVV0yD0)
+![Priority Matrix](https://imgur.com/a/qVV0yD0)
 
 ## Timeframes
 
