@@ -50,6 +50,7 @@ The API being used is Jikan (https://jikan.moe/)
 - Allows users to sort via Season, Genre, or Ratings
 - Has a recommended Anime and Manga section, that will automatically scroll itself
 - Have a well designed CSS page, that may include small animations
+- Create additional Previews detailed by Genres
 
 ## Project Schedule
 
@@ -64,7 +65,7 @@ The API being used is Jikan (https://jikan.moe/)
 
 ## Priority Matrix
 
-![Priority Matrix](https://i.imgur.com/HPIFI3W.jpg)
+![Priority Matrix](https://i.imgur.com/uIp8OJG.jpg)
 
 ## Timeframes
 
@@ -72,9 +73,17 @@ The API being used is Jikan (https://jikan.moe/)
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working on JS| H | 7hrs | | |
-| Working on CSS | M | 3hrs | | |
-| Total | H | 16hrs| 5hrs | 5hrs |
+| Create a Searchbar | H | 1.5hrs | | |
+| Recommended Section | M | 2hrs | | |
+| Anime/Manga Filter | M | 2hrs| | |
+| Search result | H | 1.5hrs | | |
+| Make Recommended Carousel | L | 1hrs | | |
+| Create a filter | L | 3hrs | | |
+| Style Websiter | H | 3hrs | | |
+| Media Query | H | 2hrs | | |
+| Additonal stlying/animation | L | 3hrs | | |
+| Preview images by Genre | L | 2hrs | | |
+| Total | H | 27hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
