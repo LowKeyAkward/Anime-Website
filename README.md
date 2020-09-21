@@ -41,12 +41,13 @@ The API being used is Jikan (https://jikan.moe/)
 
 - Able to use the API https://jikan.moe/
 - Renders the Anime and Manga data on the page 
-- Allows users to sort via Season, Genre, or Ratings
 - Has a functioning search input for titles
+- Differentiate between Manga or Anime in the search
 - Displays additional information about the title, not just the synopsis
 
 #### PostMVP  
 
+- Allows users to sort via Season, Genre, or Ratings
 - Has a recommended Anime and Manga section, that will automatically scroll itself
 - Have a well designed CSS page, that may include small animations
 
@@ -73,7 +74,7 @@ The API being used is Jikan (https://jikan.moe/)
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Working on JS| H | 7hrs | | |
 | Working on CSS | M | 3hrs | | |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 16hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
