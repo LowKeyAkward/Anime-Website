@@ -85,7 +85,9 @@ The API being used is Jikan (https://jikan.moe/)
 | Preview images by Genre | L | 2hrs | | |
 | Upon Load animation | L | 2hrs | | |
 | Audio Ques | L | 1hrs | | |
-| Total | H | 30hrs| 5hrs | 5hrs |
+| Additional Recommendation based of search| L | 3hrs | | |
+| Seperate page Search Result | L | 3hrs | | |
+| Total | H | 36hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
