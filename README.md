@@ -12,7 +12,7 @@ This project uses HTML, CSS, JS, and the API which pulls it data from https://my
 
 The API being used is Jikan (https://jikan.moe/)
 
-request_hash: "request:search:9a12998bc262504005c97fca79f3d17d34ae7f34",
+```request_hash: "request:search:9a12998bc262504005c97fca79f3d17d34ae7f34",
 request_cached: true,
 request_cache_expiry: 431726,
 results: [
@@ -30,11 +30,11 @@ start_date: "2019-04-06T00:00:00+00:00",
 end_date: "2019-09-28T00:00:00+00:00",
 members: 1039463,
 rated: "R"
-},
+},```
 
 ## Wireframes
 
-https://imgur.com/a/f1J6a7z
+!(Wireframe)(https://imgur.com/a/f1J6a7z)
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
@@ -63,7 +63,7 @@ https://imgur.com/a/f1J6a7z
 
 ## Priority Matrix
 
-https://imgur.com/a/qVV0yD0
+!(Priority Matrix)(https://imgur.com/a/qVV0yD0)
 
 ## Timeframes
 
