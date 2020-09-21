@@ -44,7 +44,7 @@ https://imgur.com/a/f1J6a7z
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://imgur.com/a/qVV0yD0
 
 ## Timeframes
 
