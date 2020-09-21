@@ -12,6 +12,25 @@ This project uses HTML, CSS, JS, and the API which pulls it data from https://my
 
 The API being used is Jikan (https://jikan.moe/)
 
+request_hash: "request:search:9a12998bc262504005c97fca79f3d17d34ae7f34",
+request_cached: true,
+request_cache_expiry: 431726,
+results: [
+{
+mal_id: 38000,
+url: "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba",
+image_url: "https://cdn.myanimelist.net/images/anime/1286/99889.jpg?s=e497d08bef31ae412e314b90a54acfda",
+title: "Kimetsu no Yaiba",
+airing: false,
+synopsis: "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjo...",
+type: "TV",
+episodes: 26,
+score: 8.69,
+start_date: "2019-04-06T00:00:00+00:00",
+end_date: "2019-09-28T00:00:00+00:00",
+members: 1039463,
+rated: "R"
+},
 
 ## Wireframes
 
