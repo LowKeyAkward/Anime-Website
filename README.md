@@ -15,7 +15,8 @@ The API being used is Jikan (https://jikan.moe/)
 
 ## Wireframes
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/f1J6a7z" data-context="false" ><a href="//imgur.com/a/f1J6a7z"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+https://imgur.com/a/f1J6a7z
+
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
