@@ -20,30 +20,39 @@ let button = document.querySelector("#button")
 button.addEventListener("click", async (e) => {
   try {
     e.preventDefault();
+    removeOldResult()
     let userInput = input.value
     let response = await axios.get(`https://api.jikan.moe/v3/search/anime?q=${userInput}&limit=10`)
     console.log(response.data.results)
-    // searchResult(response.data.results)
+    searchResult(response.data.results)
   } catch (error) {
     console.log(`Error: ${error}`)
   }
 })
 
-let resultDisplay = document.querySelector("result")
+let resultDisplay = document.querySelector(".result")
 
 let searchResult = searches => {
   searches.forEach(search => {
     let searchContainer = document.createElement("div")
     searchContainer.className = "search-result"
 
-    // let image = document.createElement("img")
-    // image.setAttribute("src", search.image_url)
-    // searchContainer.appendChild(image)
+    let image = document.createElement("img")
+    image.setAttribute("src", search.image_url)
+    searchContainer.appendChild(image)
 
     let title = document.createElement("h3")
     title.innerHTML = `${search.title}`
     searchContainer.appendChild(title)
 
+    resultDisplay.appendChild(searchContainer)
   })
-  resultDisplay.appendChild(searchContainer)
+  // resultDisplay.appendChild(searchContainer)
+}
+
+function removeOldResult() {
+  let oldResult = document.querySelector(".result")
+  while (oldResult.lastChild) {
+    oldResult.removeChild(oldResult.lastChild)
+  }
 }
