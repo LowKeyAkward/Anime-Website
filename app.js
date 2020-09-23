@@ -38,6 +38,9 @@ let searchResult = searches => {
     let searchContainer = document.createElement("div")
     searchContainer.className = "search-result"
 
+    let hiddenContainer = document.createElement("div")
+    hiddenContainer.className = "hidden"
+
     let image = document.createElement("img")
     image.setAttribute("src", search.image_url)
     searchContainer.appendChild(image)
@@ -46,6 +49,28 @@ let searchResult = searches => {
     title.innerHTML = `${search.title}`
     searchContainer.appendChild(title)
 
+    let rating = document.createElement("p")
+    rating.innerHTML = `Rated: ${search.rated}`
+    hiddenContainer.appendChild(rating)
+
+    let episodes = document.createElement("p")
+    episodes.innerHTML = `Episodes: ${search.episodes}`
+    hiddenContainer.appendChild(episodes)
+
+    let score = document.createElement("p")
+    score.innerHTML = `Score: ${search.score}`
+    hiddenContainer.appendChild(score)
+
+    let synopsis = document.createElement("p")
+    synopsis.innerHTML = `${search.synopsis}`
+    hiddenContainer.appendChild(synopsis)
+
+    let MALurl = document.createElement("p")
+    MALurl.innerHTML = search.url
+    hiddenContainer.appendChild(MALurl)
+
+
+    searchContainer.appendChild(hiddenContainer)
     resultDisplay.appendChild(searchContainer)
   })
 }
@@ -97,6 +122,6 @@ function carousel() {
   }
   myIndex++;
   if (myIndex > x.length) { myIndex = 1 }
-  x[myIndex - 1].style.display = "block"
+  x[myIndex - 1].style.display = "flex"
   setTimeout(carousel, 3000)
 }
