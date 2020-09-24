@@ -6,24 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script defer src="./app.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Whats That Anime?</title>
 </head>
-<header>
-  <h1> Whats that Anime?</h1>
-</header>
-<nav>
-  <form>
-    <input type="text" id="search"></input>
-    <button id="button">Search</button>
-  </form>
-</nav>
 
 <body>
-  <section class="recommended"></section>
-  <section class="result"></section>
-</body>
-<footer>
+  <header>
+    <h1> Whats that Anime?</h1>
+  </header>
+  <nav id=navigation>
+    <form>
+      <select id="filter">
+        <option value="anime">Anime</option>
+        <option value="manga">Manga</option>
+      </select>
+      <input type="text" id="search"></input>
+      <button id="button">Search</button>
+    </form>
+  </nav>
+  <div class="recommended"></div>
+  <div class="result"></div>
 
-</footer>
+  <footer>
+
+  </footer>
+</body>
 
 </html>

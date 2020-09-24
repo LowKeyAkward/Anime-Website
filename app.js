@@ -4,6 +4,8 @@
 
 let input = document.querySelector("#search")
 let button = document.querySelector("#button")
+// let filtered = document.querySelector("#filter").value
+// console.log(filtered)
 // let userInput = input.value
 
 // let test = async () => {
@@ -21,8 +23,9 @@ button.addEventListener("click", async (e) => {
   try {
     e.preventDefault();
     removeOldResult()
+    let filtered = document.querySelector("#filter").value
     let userInput = input.value
-    let response = await axios.get(`https://api.jikan.moe/v3/search/anime?q=${userInput}&limit=10`)
+    let response = await axios.get(`https://api.jikan.moe/v3/search/${filtered}?q=${userInput}&limit=10`)
     // let response = await axios.get("https://api.jikan.moe/v3/top/anime/1/airing")
     // console.log(response.data.top)
     searchResult(response.data.results)
@@ -38,17 +41,23 @@ let searchResult = searches => {
     let searchContainer = document.createElement("div")
     searchContainer.className = "search-result"
 
+    let titleContainer = document.createElement("div")
+    titleContainer.className = "title-result"
+
+    let imageContainer = document.createElement("div")
+    imageContainer.className = "image-result"
+
     let hiddenContainer = document.createElement("div")
     hiddenContainer.className = "hidden"
     hiddenContainer.style.display = "none"
 
     let image = document.createElement("img")
     image.setAttribute("src", search.image_url)
-    searchContainer.appendChild(image)
+    imageContainer.appendChild(image)
 
     let title = document.createElement("h3")
     title.innerHTML = `${search.title}`
-    searchContainer.appendChild(title)
+    titleContainer.appendChild(title)
 
     let rating = document.createElement("p")
     rating.innerHTML = `Rated: ${search.rated}`
@@ -66,12 +75,16 @@ let searchResult = searches => {
     synopsis.innerHTML = `${search.synopsis}`
     hiddenContainer.appendChild(synopsis)
 
-    let MALurl = document.createElement("p")
-    MALurl.innerHTML = search.url
-    hiddenContainer.appendChild(MALurl)
+    searchContainer.addEventListener("click", () => {
+      let hider = document.getElementsByClassName("hidden")
+      for (let i = 0; i < hider.length; i++) {
+        let hiders = hider[i].style
+        hiders.display = hiders.display === "none" ? "block" : "none"
+      }
+    })
 
-    searchContainer.addEventListener("click", toggle)
-
+    searchContainer.appendChild(imageContainer)
+    searchContainer.appendChild(titleContainer)
     searchContainer.appendChild(hiddenContainer)
     resultDisplay.appendChild(searchContainer)
   })
@@ -128,11 +141,11 @@ function carousel() {
   setTimeout(carousel, 3000)
 }
 
-function toggle() {
-  let hider = document.querySelector(".hidden")
-  if (hider.style.display === "none") {
-    hider.style.display = "flex"
-  } else {
-    hider.style.display = "none"
+function toggle(cls) {
+  let hider = document.getElementsByClassName(cls)
+  for (let i = 0; i < hider.length; i++) {
+    let hiders = hider[i].style
+    hiders.display = hiders.display === "none" ? "block" : "none"
   }
 }
+
