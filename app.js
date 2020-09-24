@@ -40,6 +40,7 @@ let searchResult = searches => {
 
     let hiddenContainer = document.createElement("div")
     hiddenContainer.className = "hidden"
+    hiddenContainer.style.display = "none"
 
     let image = document.createElement("img")
     image.setAttribute("src", search.image_url)
@@ -69,6 +70,7 @@ let searchResult = searches => {
     MALurl.innerHTML = search.url
     hiddenContainer.appendChild(MALurl)
 
+    searchContainer.addEventListener("click", toggle)
 
     searchContainer.appendChild(hiddenContainer)
     resultDisplay.appendChild(searchContainer)
@@ -124,4 +126,13 @@ function carousel() {
   if (myIndex > x.length) { myIndex = 1 }
   x[myIndex - 1].style.display = "flex"
   setTimeout(carousel, 3000)
+}
+
+function toggle() {
+  let hider = document.querySelector(".hidden")
+  if (hider.style.display === "none") {
+    hider.style.display = "flex"
+  } else {
+    hider.style.display = "none"
+  }
 }
