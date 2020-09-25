@@ -141,11 +141,3 @@ function carousel() {
   setTimeout(carousel, 3000)
 }
 
-function toggle(cls) {
-  let hider = document.getElementsByClassName(cls)
-  for (let i = 0; i < hider.length; i++) {
-    let hiders = hider[i].style
-    hiders.display = hiders.display === "none" ? "block" : "none"
-  }
-}
-
