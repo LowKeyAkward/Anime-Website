@@ -37,7 +37,6 @@ The API being used is Jikan (https://jikan.moe/)
 ![Wireframe](https://i.imgur.com/kEY8BtB.jpg)
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Able to use the API https://jikan.moe/
 - Renders the Anime and Manga data on the page 
@@ -57,9 +56,9 @@ The API being used is Jikan (https://jikan.moe/)
 |  Day | Deliverable | Status
 |---|---| ---|
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Sept 21| Project Approval | Incomplete
-|Sept 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Sept 23| MVP | Incomplete
+|Sept 21| Project Approval | Complete
+|Sept 22| Core Application Structure (HTML, CSS, etc.) | Complete
+|Sept 23| MVP | Complete
 |Sept 24| Post MVP/Styling | Incomplete
 |Sept 25| Presentations | Incomplete
 
@@ -73,31 +72,37 @@ The API being used is Jikan (https://jikan.moe/)
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Create a Searchbar | H | 1.5hrs | | |
-| Recommended Section | M | 2hrs | | |
-| Anime/Manga Filter | M | 2hrs| | |
-| Search result | H | 1.5hrs | | |
-| Make Recommended Carousel | L | 1hrs | | |
-| Create a filter | L | 3hrs | | |
-| Style Websiter | H | 3hrs | | |
-| Media Query | H | 2hrs | | |
-| Additonal stlying/animation | L | 3hrs | | |
-| Preview images by Genre | L | 2hrs | | |
-| Upon Load animation | L | 2hrs | | |
-| Audio Ques | L | 1hrs | | |
-| Additional Recommendation based of search| L | 3hrs | | |
-| Seperate page Search Result | L | 3hrs | | |
-| Total | H | 36hrs| 5hrs | 5hrs |
+| Create a Searchbar | H | 1.5hrs | 1hrs | 45min |
+| Recommended Section | M | 2hrs | 1hrs | 1hrs |
+| Anime/Manga Filter | M | 2hrs| 20min | 20min |
+| Search result | H | 1.5hrs | 7hrs | 7hrs |
+| Make Recommended Carousel | L | 1hrs | 10min | 10min |
+| Create a filter | L | 3hrs | N/A | N/A |
+| Style Websiter | H | 3hrs | 5hrs | 5hrs |
+| Media Query | H | 2hrs | 20min | 20min |
+| Additonal stlying/animation | L | 3hrs | N/A | N/A |
+| Preview images by Genre | L | 2hrs | N/A | N/A |
+| Upon Load animation | L | 2hrs | N/A | N/A |
+| Audio Ques | L | 1hrs | N/A | N/A |
+| Additional Recommendation based of search| L | 3hrs | N/A | N/A |
+| Seperate page Search Result | L | 3hrs | N/A | N/A |
+| Total | H | 36hrs| 22hrs | 21.5hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+This function is my toggle function for hiding and revealing a hidden DIV. There is a hidden container attatched to the main div that displays the image and title, and when clicked it will change the display property of the hidden div from none to block. This reveals the Synopsis, score, rating, and episode length of the anime/manga. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+searchContainer.addEventListener("click", () => { //an on click event that toggles the hidden divs display from "none" to "block"
+      let hider = document.getElementsByClassName("hidden") //set hidden class to hider
+      for (let i = 0; i < hider.length; i++) { //loop through the hider array
+        let hiders = hider[i].style //set hiders to the value of wherever the loop is at in hiders style
+        hiders.display = hiders.display === "none" ? "block" : "none" //if where ever in the hiders array style.display = none change it to block, if not = none change it none
+      }
+    })
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+
+
+
