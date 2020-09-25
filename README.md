@@ -78,7 +78,7 @@ The API being used is Jikan (https://jikan.moe/)
 | Search result | H | 1.5hrs | 7hrs | 7hrs |
 | Make Recommended Carousel | L | 1hrs | 10min | 10min |
 | Create a filter | L | 3hrs | N/A | N/A |
-| Style Websiter | H | 3hrs | 4hrs | 4hrs |
+| Style Websiter | H | 3hrs | 5hrs | 5hrs |
 | Media Query | H | 2hrs | 20min | 20min |
 | Additonal stlying/animation | L | 3hrs | N/A | N/A |
 | Preview images by Genre | L | 2hrs | N/A | N/A |
@@ -86,17 +86,21 @@ The API being used is Jikan (https://jikan.moe/)
 | Audio Ques | L | 1hrs | N/A | N/A |
 | Additional Recommendation based of search| L | 3hrs | N/A | N/A |
 | Seperate page Search Result | L | 3hrs | N/A | N/A |
-| Total | H | 36hrs| 21hrs | 19.5hrs |
+| Total | H | 36hrs| 22hrs | 21.5hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+This function is my toggle function for hiding and revealing a hidden DIV. There is a hidden container attatched to the main div that displays the image and title, and when clicked it will change the display property of the hidden div from none to block. This reveals the Synopsis, score, rating, and episode length of the anime/manga. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+searchContainer.addEventListener("click", () => { //an on click event that toggles the hidden divs display from "none" to "block"
+      let hider = document.getElementsByClassName("hidden") //set hidden class to hider
+      for (let i = 0; i < hider.length; i++) { //loop through the hider array
+        let hiders = hider[i].style //set hiders to the value of wherever the loop is at in hiders style
+        hiders.display = hiders.display === "none" ? "block" : "none" //if where ever in the hiders array style.display = none change it to block, if not = none change it none
+      }
+    })
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+
