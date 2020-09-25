@@ -4,6 +4,10 @@
 
 What's That Anime
 
+## Project Deployment
+
+https://github.com/LowKeyAkward/Anime-Website
+
 ## Project Description
 
 This project uses HTML, CSS, JS, and the API which pulls it data from https://myanimelist.net/ in order to create a website that will give you information about your favorite anime, and potentially recommend you other anime that you should if interested!

@@ -7,14 +7,20 @@ let button = document.querySelector("#button")
 let resultDisplay = document.querySelector(".result")
 let recommended = document.querySelector(".recommended")
 let audio = new Audio("DemonSlayerKayouRemix.mp3");
+let logo = document.querySelector(".logo")
 let myIndex = 0
+
+//event listener to play music
+logo.addEventListener("click", () => {
+  audio.play()
+})
 
 //Search Button Event
 button.addEventListener("click", async (e) => {
   try {
     e.preventDefault();
     removeOldResult() //line 81
-    audio.play()
+    // audio.play()
     let filtered = document.querySelector("#filter").value //value taken from select form
     let userInput = input.value
     let response = await axios.get(`https://api.jikan.moe/v3/search/${filtered}?q=${userInput}&limit=10`)
