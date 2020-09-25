@@ -22,6 +22,8 @@ header{
   border: 5px solid #233a3d;
 }
 
+
+/* original search bar inspiration from https://www.mockplus.com/blog/post/search-bar-design */
 #navigation{
   display: flex;
   position: fixed;
@@ -146,5 +148,10 @@ form{
 
   #search{
     width: 150px;
+  }
+
+  .logo{
+    width: 75px;
+  height: 100px;
   }
 }

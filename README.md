@@ -6,7 +6,7 @@ What's That Anime
 
 ## Project Deployment
 
-https://github.com/LowKeyAkward/Anime-Website
+https://lowkeyakward.github.io/Anime-Website/
 
 ## Project Description
 

@@ -19,12 +19,11 @@ logo.addEventListener("click", () => {
 button.addEventListener("click", async (e) => {
   try {
     e.preventDefault();
-    removeOldResult() //line 81
-    // audio.play()
+    removeOldResult() //line 88
     let filtered = document.querySelector("#filter").value //value taken from select form
     let userInput = input.value
     let response = await axios.get(`https://api.jikan.moe/v3/search/${filtered}?q=${userInput}&limit=10`)
-    searchResult(response.data.results) //line 26
+    searchResult(response.data.results) //line 33
   } catch (error) {
     console.log(`Error: ${error}`)
   }
@@ -85,7 +84,7 @@ let searchResult = searches => {
   })
 }
 
-//function to clear out old search results, used in line 15.
+//function to clear out old search results, used in line 22.
 function removeOldResult() {
   let oldResult = document.querySelector(".result")
   while (oldResult.lastChild) {
@@ -113,8 +112,8 @@ async function previewBox() {
   try {
     let response = await axios.get(url)
     let previewImage = response.data.top
-    recommendedPreview(previewImage) //line 88
-    carousel() //line 118
+    recommendedPreview(previewImage) //line 96
+    carousel() //line 125
   } catch (error) {
     console.log(`Error: ${error}`);
   }
