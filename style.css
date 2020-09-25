@@ -10,6 +10,7 @@ header{
   top: 0%;
   width: 100%;
   background-image: url("https://31.media.tumblr.com/81ddca23543ae3f34ddcc2d64296765f/tumblr_msbx6yKrDA1ril7tio1_250.gif");
+  border: 5px solid #233a3d;
 }
 
 #navigation{
