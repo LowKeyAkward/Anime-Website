@@ -37,7 +37,6 @@ The API being used is Jikan (https://jikan.moe/)
 ![Wireframe](https://i.imgur.com/kEY8BtB.jpg)
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Able to use the API https://jikan.moe/
 - Renders the Anime and Manga data on the page 
@@ -73,21 +72,21 @@ The API being used is Jikan (https://jikan.moe/)
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Create a Searchbar | H | 1.5hrs | | |
-| Recommended Section | M | 2hrs | | |
-| Anime/Manga Filter | M | 2hrs| | |
-| Search result | H | 1.5hrs | | |
-| Make Recommended Carousel | L | 1hrs | | |
-| Create a filter | L | 3hrs | | |
-| Style Websiter | H | 3hrs | | |
-| Media Query | H | 2hrs | | |
-| Additonal stlying/animation | L | 3hrs | | |
-| Preview images by Genre | L | 2hrs | | |
-| Upon Load animation | L | 2hrs | | |
-| Audio Ques | L | 1hrs | | |
-| Additional Recommendation based of search| L | 3hrs | | |
-| Seperate page Search Result | L | 3hrs | | |
-| Total | H | 36hrs| 5hrs | 5hrs |
+| Create a Searchbar | H | 1.5hrs | 1hrs | 45min |
+| Recommended Section | M | 2hrs | 1hrs | 1hrs |
+| Anime/Manga Filter | M | 2hrs| 20min | 20min |
+| Search result | H | 1.5hrs | 7hrs | 7hrs |
+| Make Recommended Carousel | L | 1hrs | 10min | 10min |
+| Create a filter | L | 3hrs | N/A | N/A |
+| Style Websiter | H | 3hrs | 4hrs | 4hrs |
+| Media Query | H | 2hrs | 20min | 20min |
+| Additonal stlying/animation | L | 3hrs | N/A | N/A |
+| Preview images by Genre | L | 2hrs | N/A | N/A |
+| Upon Load animation | L | 2hrs | N/A | N/A |
+| Audio Ques | L | 1hrs | N/A | N/A |
+| Additional Recommendation based of search| L | 3hrs | N/A | N/A |
+| Seperate page Search Result | L | 3hrs | N/A | N/A |
+| Total | H | 36hrs| 21hrs | 19.5hrs |
 
 ## Code Snippet
 
