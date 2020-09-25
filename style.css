@@ -1,3 +1,7 @@
+body{
+  background-image: url("https://img5.goodfon.com/wallpaper/nbig/b/19/demon-slayer-kimetsu-no-yaiba-fon-paren-maska.jpg");
+}
+
 header{
   display: flex;
   justify-content: flex-start;
@@ -5,6 +9,7 @@ header{
   background-color: cyan;
   top: 0%;
   width: 100%;
+  background-image: url("https://31.media.tumblr.com/81ddca23543ae3f34ddcc2d64296765f/tumblr_msbx6yKrDA1ril7tio1_250.gif");
 }
 
 #navigation{
@@ -109,6 +114,8 @@ form{
  background: rgba(204, 196, 196, 0.71);
  margin: 0px 100px 50px 100px;
  padding-top: 50px;
+ border-radius: 20px 20px 20px 20px;
+ border: 5px solid #00B4CC;
 }
 
 
@@ -118,6 +125,7 @@ form{
 }
 
 @media (min-device-width: 375px){
+  
   .recommended {
     margin: 0px 30px 50px 30px;
   }
